@@ -1,16 +1,21 @@
-** Google's Protobuf for C++/Java/Python **
+# Google's Protobuf for C++/Java/Python #
 
 
 This library is awesome, creates classes for a variety of languages.
+
+C++ / Java / Python
+
 Follow the tutorial below :
+
 [cpp tutorial](https://developers.google.com/protocol-buffers/docs/cpptutorial)
 
 Also Download and install the library:
+
 [download ](https://developers.google.com/protocol-buffers/docs/downloads)
 
 You can also download the protobuf library for any platform.
 
-** git clone https://developers.google.com/protocol-buffers/docs/downloads **
+* git clone https://developers.google.com/protocol-buffers/docs/downloads *
 
 You will need protobuf to compile this address book
 
@@ -24,12 +29,20 @@ After installing source follow the steps below
 * sudo make install
 
 You will have to either edit and add a path to your new lib.
+
 Default installation is under /usr/local/lib
 
 Edit /etc/ld.so.conf
-Add your  installation directory path:   /usr/local/lib
-Run    'sudo ldconfig'
 
-clone this package
+Add your  installation directory path:   /usr/local/lib
+
+Run  :
+
+```bash
+sudo ldconfig'
+```
+
 Comes with a Makefile so to compile run :
-$ make all
+```bash
+make all
+```
