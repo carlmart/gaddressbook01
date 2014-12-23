@@ -1,6 +1,8 @@
 ** Google's Protobuf for C++/Java/Python **
+
+
 This library is awesome, creates classes for a variety of languages.
-You will need to follow a tutorial :
+Follow the tutorial below :
 [cpp tutorial](https://developers.google.com/protocol-buffers/docs/cpptutorial)
 
 Also Download and install the library:
