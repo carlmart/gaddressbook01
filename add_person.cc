@@ -76,8 +76,24 @@ int main(int argc, char* argv[]) {
     }
   }
 
+
+  while (true) {
   // Add an address.
-  PromptForAddress(address_book.add_person());
+    PromptForAddress(address_book.add_person());
+    cout << "Continue ?: (y)es (n)o ";
+    string yesno;
+    getline(cin, yesno);
+    if (yesno == "y") {
+       cout << "continue ...." << endl;
+    } else if (yesno.empty()) {
+      cout << "Good bye" << endl;
+      break;
+    } else {
+      cout << "Exiting" << endl;
+      break;
+   }
+  }
+
 
   {
     // Write the new address book back to disk.
