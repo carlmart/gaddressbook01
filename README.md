@@ -1,7 +1,7 @@
-# Google's Protobuf  #
+# Simple Address Book in C++  #
 
 
-This library is awesome, creates classes for a variety of languages.
+Google's Protobuf library is awesome, creates classes for a variety of languages.
 
 Easy to use code generator for C++ / Java / Python
 
