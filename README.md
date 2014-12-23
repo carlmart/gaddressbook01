@@ -1,9 +1,45 @@
-# Google's Protobuf for C++/Java/Python #
+# Google's Protobuf  #
 
 
 This library is awesome, creates classes for a variety of languages.
 
-C++ / Java / Python
+Easy to use code generator for C++ / Java / Python
+
+addressbook.proto does the magic. With the following code
+
+you run 'make' and new files get generated.
+
+```cpp
+syntax="proto2";  // required there is now a proto3
+package tutorial;
+
+message Person {
+  required string name = 1;
+  required int32 id = 2;        // Unique ID number for this person.
+  optional string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    required string number = 1;
+    optional PhoneType type = 2 [default = HOME];
+  }
+
+  repeated PhoneNumber phone = 4;
+}
+
+// Our address book file is just one of these.
+message AddressBook {
+  repeated Person person = 1;
+}
+
+
+```
+
 
 Follow the tutorial below :
 
